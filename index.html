@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <link href="index.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="icon" href="">
+    </head>
+    <body>
+        <div class="vl"></div>
+        <div class="vl1"></div>
+        <nav class="navbar">
+            <div class="contenant-liste-boutons">
+                <ul class="liste-boutons">
+                    <li class="boutons"><a href="#accueil">ACCUEIL</a></li>
+                    <li class="boutons"><a href="#apropos">À PROPOS</a></li>
+                    <li class="boutons"><a href="#">COMPÉTENCES</a></li>
+                    <li class="boutons"><a href="#">CERTIFICATIONS</a></li>
+                    <li class="boutons"><a href="#">PROJETS</a></li>
+                    <li class="boutons"><a href="#">CONTACT</a></li>
+                    <li class="boutons"><button class="bt"><a href="#" id="connexion">CONNEXION</a></button></li>
+                </ul>
+            </div>    
+            <img src="image/menu.png" class="menu-hamburger">
+        </nav>
+        <div class="boxaccueil" style="max-width:1300px; padding: 0 150px;">
+            <section id="accueil">
+                <div class="contenant-accueil">
+                    <div>
+                        <p class="bjr">Bonjour, je m'appelle</p>
+                    </div>
+                    <div>
+                        <p class="prenom">Guerda Yacine.</p>
+                    </div>
+                    <div class="contenant-photo">
+                        <img  class="pdp" src="image/pdp.jfif">
+                    </div>
+                    <div class="deb">
+                        <p class="statut">Débutant HTML/CSS</p>
+                    </div>
+                    <div class="contenant-texte-accueil">
+                        <p class="texte-accueil">
+                            Je m'appelle Guerda Yacine je suis étudiant en première année de BTS SIO option slam.
+                            Durant cette année j'ai eu l'occasion d'utiliser plusieurs language tels que le HTML, le CSS, le PHP, le C#, le Sql...
+                            Je vous laisse naviguer dans mon Portfolio afin d'en découvrir plus sur moi et mes projets.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="projets">
+                <div class="contenant-projet">
+                    <div class="titre-projets" >
+                        <p class="statut" >Mes projets réalisés</p>
+                    </div>
+                    <div class="contenant-liens-projets">
+                        <img class="alex" src="image/projetalex.PNG">
+                        <img class="disney" src="image/projetdisney.PNG">
+                        <img class="dupont" src="image/projetdupont.PNG">
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+            <section class="a propos">
+                <div class="parcours">
+                    <p class="texte-parcours">Mon parcours</p>
+                </div>
+                <div id="apropos">
+                        <p class="texte-accueil">
+                            J'ai 18 ans et je suis né à Creil (la ville ou j'ai grandis). Arrivé en seconde générale au lycée Marie Curie à Nogent sur Oise, j'étais très vite intéréssé par l'informatique nottament grâce aux sciences numériques et technologiques.
+                            Malheureusement je n'ai pas continué sur ce cursus et j'ai décidé de faire quelque chose de classique c'est pour cela que j'ai choisis les spécialité mathémtiques physiques et svt en première. Cela ne m'interessait pas plus que ça mais j'ai tout de même obtenu mon baccalauréat.
+                            J'ai décidé de me ré-orienter vers le domaine de l'informatique, j'ai donc choisis la formation que proposait le lycée Saint-Vincent et cela me pait particulièrement. Je compte et j'espère obtenir mon BTS afin de poursuivre vers une année de licene et par la suite effectuer un master tout ça dans le domaine de l'informatique.
+                            Tout ce travail me permettra d'atteindre mon objectif final qui est d'être developpeur web.
+                            Durant cette formation j'ai pu rencontrer plusieurs langage tels que le HTML/CSS, le JAVASCRIPT, le PHP, le SQL... J'étudie en dehors de mes heures de cours afin de rattraper mon retard ou prendre de l'avance sur d'autres langages.
+                            Je vous laisse observer les différents projets au sein de mon portfolio qui en est lui même un.
+                        </p>
+                </div>
+            </section>
+        </div>
+    </body>
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".contenant-liste-boutons")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>

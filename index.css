@@ -1,0 +1,258 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #0A192F;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: #0A192F;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(#0A192F, rgb(93, 238, 205));
+    border-radius: 20px;
+}
+
+.navbar{
+    position: sticky;
+    background-color: transparent;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 2;
+    top: 0;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0,0,0,0.1) 0px 10px 8px 10px;
+}
+
+.navbar .contenant-liste-boutons{
+    display: flex;
+    align-items: center;
+}
+
+.liste-boutons{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 1600px;
+    gap: 3%;
+    padding-top: 10px;
+}
+
+.boutons a{
+    text-decoration: none;
+    color: rgb(93, 238, 205);
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    gap: 5%;
+    z-index: 3;
+}
+
+.boutons a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: 2px;
+    width: 95%;
+    height: 3px;
+    transform: scaleX(0);
+    transform-origin: center;
+    background: rgb(93, 238, 205);
+    transition: transform 0.2s ease-out;
+}
+
+.boutons a:hover::after{
+    transform: scaleX(100%);
+}
+
+.bt{
+    background-color: rgb(93, 238, 205);
+    color: #fff;
+    border:1px solid rgb(93, 238, 205);
+    border-radius: 5px;
+}
+
+#connexion{
+    color: #fff;
+}
+
+#connexion::after{
+    content: "";
+    position: absolute;
+    transform: scaleX(0);
+    background: white;
+    transition: transform 0.2s ease-out;
+}
+
+#connexion:hover::after{
+    transform: scaleX(100%);
+}
+
+.navbar .menu-hamburger{
+    display: none;
+    right: 50px;
+    width: 70px;
+}
+
+@media screen and (max-width: 1390px) {
+    .navbar .menu-hamburger {
+        display: block;
+        margin-left: 50px;
+        padding: 10px;
+        z-index: 50;
+        position: relative;
+    }
+
+    .navbar .contenant-liste-boutons {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+    }
+
+    .contenant-liste-boutons.mobile-menu{
+        margin-left: 0;
+    }
+
+    .navbar .contenant-liste-boutons ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .contenant-liste-boutons ul li{
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+}
+
+.vl{
+    border-left: 1px solid grey;
+    height: 50%;
+    position: fixed;
+    left: 5%;
+    bottom: -0.6%;
+}
+
+.vl1{
+    border-left: 1px solid grey;
+    height: 50%;
+    position: fixed;
+    right: 5%;
+    bottom: -0.6%;
+}
+
+.bjr{
+    color: rgb(93, 238, 205);
+    position: relative;
+    left: 44%;
+    font-size: large;
+}
+
+.prenom{
+    color: rgb(204, 214, 246);
+    font-size: 100px;
+    position: relative;
+    left: 25%;
+    font-weight: bold;
+}
+
+.statut{
+    color: rgb(136, 146, 176);
+    font-size: 80px;
+    font-weight: bold;
+    position: relative;
+}
+
+
+.texte-accueil{
+    color: rgb(81, 94, 120);
+    font-size: large;
+    position: relative;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.contenant-accueil{
+    position: relative;
+    margin-top: 15%;
+}
+
+.contenant-texte-accueil{
+    max-width: 800px;
+}
+
+.deb{
+    max-width: 810px;
+}
+
+.contenant-photo{
+    max-width: 180px;
+    float: right;
+    margin-right: 10%;
+    margin-top: 8%;
+}
+
+.pdp{
+    color: rgb(93, 238, 205);
+}
+
+.parcours{
+    max-width: 500px;
+}
+
+.texte-parcours{
+    color: rgb(136, 146, 176);
+    font-size: 80px;
+    font-weight: bold;
+    position: relative;
+}
+
+.contenant-projets{
+    max-height: 700px;
+}
+
+.contenant-liens-projets{
+    display: grid;
+    gap: 2%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.alex{
+    border: solid rgb(93, 238, 205) 4px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.disney{
+    border: solid rgb(93, 238, 205) 4px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.dupont{
+    border: solid rgb(93, 238, 205) 4px;
+    border-radius: 3px;
+    width: 100%;
+    min-width: 100%;
+}
