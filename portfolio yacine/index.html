@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <link href="index.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swup/dist/swup.min.css" />
+        <script src="https://unpkg.com/swup/dist/swup.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="icon" href="image/YG.jpg">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="vl"></div>
+        <div class="vl1"></div>
+        <nav class="navbar">
+            <div class="contenant-liste-boutons">
+                <ul class="liste-boutons">
+                    <li class="boutons"><a href="index.html#accueil">ACCUEIL</a></li>
+                    <li class="boutons"><a href="index.html#projets">PROJETS</a></li>
+                    <li class="boutons"><a href="index.html#apropos">À PROPOS</a></li>
+                    <li class="boutons"><a href="index.html#contact">CONTACT</a></li>
+                    <li class="boutons"><button class="bt"><a href="connexion.html" id="connexion">CONNEXION</a></button></li>
+                </ul>
+            </div>   
+            <img src="image/menu.png" class="menu-hamburger">
+        </nav>
+        <div class="boxaccueil" style="max-width:1300px; padding: 0 150px;">
+            <section id="accueil">
+                <div class="contenant-accueil">
+                    <div>
+                        <p class="bjr">Bonjour, je m'appelle</p>
+                    </div>
+                    <div>
+                        <p class="prenom">Guerda Yacine.</p>
+                    </div>
+                    <div class="contenant-photo">
+                        <img  class="pdp" src="image/pdp.jfif">
+                    </div>
+                    <div class="deb">
+                        <p class="statut">Débutant HTML/CSS</p>
+                    </div>
+                    <div class="contenant-texte-accueil">
+                        <p class="texte-accueil">
+                            Je m'appelle Guerda Yacine je suis étudiant en première année de BTS SIO option slam.
+                            Durant cette année j'ai eu l'occasion d'utiliser plusieurs language tels que le HTML, le CSS, le PHP, le C#, le Sql...
+                            Je vous laisse naviguer dans mon Portfolio afin d'en découvrir plus sur moi et mes projets.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="projets" style="padding-top: 60px;">
+                <p class="titre-projet">Mes projets</p>
+                    <div class="timeline">
+                        <div class="contenant gauche">
+                            <div class="contenu">
+                                <h2>Septembre 2022</h2>
+                                <p>Nous avions commencé l'année par une évaluation de notre niveau. Nous devions reproduire un CV à l'identique uniquement en HTML/CSS.</p>
+                                <a href="#"><img class="screen" src="image/projetdupont.PNG"></a>
+                                <a class="lien" href="#">Voir le projet</a>
+                            </div>
+                        </div>
+                        <div class="contenant droite">
+                            <div class="contenu">
+                                <h2>Octobre 2022</h2>
+                                <p>Notre deuxième projet était une reproduction d'un CV un peu plus complexe toujours en HTML/CSS. La notion de responsive n'était pas prise en compte.</p>
+                                <a href="#"><img class="screen" src="image/projetalex.PNG"></a>
+                                <a class="lien" href="#">Voir le projet</a>
+                            </div>
+                        </div>
+                        <div class="contenant gauche">
+                            <div class="contenu">
+                                <h2>Novembre-Janvier 2022/2023</h2>
+                                <p>Notre troisième projet était la repruction du site disney + en HTML/CSS et en Javascript. La notion de responsive était à prendre en compte.</p>
+                                <a href="#"><img class="screen" src="image/projetdisney.PNG"></a>
+                                <a class="lien" href="#">Voir le projet</a>
+                            </div>
+                        </div>
+                        <div class="contenant droite">
+                            <div class="contenu">
+                                <h2>D'autre projets à venir...</h2>
+                            </div>
+                    </div>
+            </section>
+            <section id="apropos" style="padding-top: 60px;">
+                <div class="parcours">
+                    <p class="texte-parcours">Mon parcours</p>
+                </div>
+                <div>
+                        <p class="texte-accueil">
+                            J'ai 18 ans et je suis né à Creil (la ville ou j'ai grandis). Arrivé en seconde générale au lycée Marie Curie à Nogent sur Oise, j'étais très vite intéréssé par l'informatique nottament grâce aux sciences numériques et technologiques.
+                            Malheureusement je n'ai pas continué sur ce cursus et j'ai décidé de faire quelque chose de classique c'est pour cela que j'ai choisis les spécialité mathémtiques physiques et svt en première. Cela ne m'interessait pas plus que ça mais j'ai tout de même obtenu mon baccalauréat.
+                            J'ai décidé de me ré-orienter vers le domaine de l'informatique, j'ai donc choisis la formation que proposait le lycée Saint-Vincent et cela me pait particulièrement. Je compte et j'espère obtenir mon BTS afin de poursuivre vers une année de licene et par la suite effectuer un master tout ça dans le domaine de l'informatique.
+                            Tout ce travail me permettra d'atteindre mon objectif final qui est d'être developpeur web.
+                            Durant cette formation j'ai pu rencontrer plusieurs langage tels que le HTML/CSS, le JAVASCRIPT, le PHP, le SQL... J'étudie en dehors de mes heures de cours afin de rattraper mon retard ou prendre de l'avance sur d'autres langages.
+                            Je vous laisse observer les différents projets au sein de mon portfolio qui en est lui même un.
+                        </p>
+                </div>
+            </section>
+
+        <section id="contact" style="padding-top: 60px;">
+            <div class="contenant-formulaire">
+                <div class="titre">
+                    <h1>Contactez moi</h1>
+                </div>
+                <form action="#" method="post">
+                    <input type="text" name="nom" placeholder="Entrer votre nom..." required="">
+                    <input type="email" name="email" placeholder="Entrer votre e-mail..." required="">
+                    <input type="text" name="sujet" placeholder="Indiquer le sujet de votre message..." required="">
+                    <textarea name="message" placeholder="Entrer votre message"></textarea>
+                    <button type="submit" style="
+                    width: 192px;
+                    background-color: #0A192F;
+                    color: rgb(93, 238, 205);
+                    border: 1px solid #ffffff;
+                    width: 192px;
+                    height: 50px;
+                    border-radius: 8px;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                    margin-top: 30px;">Envoyer</button>
+                </form>
+            </div>
+        </section>
+        </div>
+    </body>
+</html>
